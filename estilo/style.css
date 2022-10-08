@@ -35,7 +35,7 @@ header{
     min-height: 150px;
     text-align: center;
     padding-top: 40px;
-
+    
 }
 
 header > p{
@@ -189,6 +189,7 @@ footer{
     font-size: 1em;
     padding: 5px;
 
+
 }
 
 footer a{
@@ -201,3 +202,58 @@ footer a:hover{
     text-decoration: underline;
     color: var(--cor3); 
 }
+
+/* ELENCO ATUAL DO TIME  */
+
+section{
+    position: relative;
+    height: 500px;
+    display: flex;
+    align-items: center;
+
+}
+.swiper{
+    width: 1300px;
+}
+
+.card{
+    position: relative;
+    border-radius: 20px;
+    margin: 20px 0;
+}
+
+section .card .image{
+    background-color: var(--cor1);
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 1px; 
+}
+
+section .card .image img{
+    height: 100%;
+    width: 100%;
+    transition: all 0.4s;
+    opacity: 60%;
+}
+
+section .card .image img:hover{
+    transform: scale(1.07);
+    opacity: 100%;
+}
+
+.swiper-pagination{
+    position: absolute;
+}
+
+div.swiper-button-next, div.swiper-button-prev{
+    color:var(--cor2);
+ 
+}
+
+.swiper-button-next:hover, .swiper-button-prev:hover{
+    opacity: 1;
+    color:var(--cor3);
+}
+
