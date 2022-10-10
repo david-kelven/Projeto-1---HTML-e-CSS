@@ -8,6 +8,7 @@
     <title>Corinthians Grande</title>
     <link rel="shortcut icon" href="imagens/corinthians.ico" type="image/x-icon">
     <link rel="stylesheet" href="estilo/style.css">
+
 </head>
 
 <body>
@@ -19,18 +20,70 @@
         <a href="index.html">Home</a>
         <a href="historia.html">História</a>
         <a href="elenco.html">Elenco Atual</a>
-        <a href="#">Pesquisa</a>
-        <a href="#">Fale Conosco</a>
+        <a href="pesquisa.html">Pesquisa</a>
+        <a href="contato.html">Fale Conosco</a>
     </nav>
+    
+    
     <main>
-        
+        <div class="slider">
 
-        
+            <div class="slides">
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+    
+                <div class="slide first">
+                    <img src="imagens/fundacao.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="imagens/elenco/balbuena.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="imagens/elenco/fabio.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="imagens/elenco/gil.png" alt="">
+                </div>
+    
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                </div>
+    
+            </div>    
+            
+            <div class="manual-navigation">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+            </div>
+            
+            
+    
+        </div>
+
+        <h2>Principais Notícias </h2> 
+
+        <p>
+            Sport Club Corinthians Paulista é um clube poliesportivo
+            brasileiro da cidade de <strong>São Paulo</strong>, capital do estado de
+            São Paulo. Foi fundado como uma equipe de futebol no dia 1 de setembro de 1910
+            por um grupo de operários do bairro Bom Retiro.
+            Seu nome foi inspirado no Corinthian FC de Londres, que excursionava
+            pelo Brasil.
+        </p>
     </main>
     <footer>
         <p>Site Criado por <a href="#" target="_blank">David Kelven</a></p>
     </footer>
 
+    <script src="JavaScript/slide.js"></script>
+    
 </body>
 
 </html>
