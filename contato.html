@@ -23,31 +23,67 @@
         <a href="pesquisa.html">Pesquisa</a>
         <a href="contato.html">Fale Conosco</a>
     </nav>
-        
+    
     <main>
-        <div class="elementor">
-            <div id="container-left">
-                <h1>Telefone</h1>
-                <p>(11) 3333-1910</p>
-                <p>(11) 92012-1910</p>
-            </div>
-
-            <div id="container-center">
-                <h1>Email</h1>
-                <p>corinthiansgrande@gmail.com</p>
-            </div>
-
-            <div id="container-right">
-                <h1>Redes Sociais</h1>
-                <div class="social">
-                    <a href="#"><span class="fa-brands fa-whatsapp"></span></a>
-                    <a href="#"><span class="fab fa-instagram"></span></a>
-                    <a href="#"><span class="fab fa-twitter"></span></a>
+       <div class="contato">
+        
+            <div class="cartao">
+                <div class="img">
+                    <img src="/Projeto 1 - HTML e CSS/imagens/icons/instagram.png" alt="">
+                </div>
+                <h1>Instagram</h1>
+                <div class="content">
+                    <p>@corithiansgrande</p>
+                    <a href="#">Ir para o perfil</a>
                 </div>
             </div>
+            <!- segundo card ->
+            <div class="cartao">
+                <div class="img">
+                    <img src="/Projeto 1 - HTML e CSS/imagens/icons/whatsapp.png" alt="">
+                </div>
+                <h1>Whatsapp</h1>
+                <div class="content">
+                    <p>(11) 1910-2012</p>
+                    <a href="#">Abrir conversa</a>
+                </div>
+            </div>
+            <!- terceiro card ->
+            <div class="cartao">
+                <div class="img">
+                    <img src="/Projeto 1 - HTML e CSS/imagens/icons/endereco.png" alt="">
+                </div>
+                <h1>Endereço</h1>
+                <div class="content">
+                    <p>Parque São Jorge</p>
+                    <a href="#">Como chegar</a>
+                </div>
+            </div>
+       </div>
+       
+       <div class="inferior">
+            <section id="form">
+                <h1>Como Podemos ajudar?</h1>
+                    <form action="https://api.staticforms.xyz/submit" method="post">
+                        <label>Nome</label>
+                        <input type="text" name="name" placeholder="Digite seu nome" autocomplete="off" required>
+                        <label>Email</label>
+                        <input type="email" name="email" placeholder="Digite seu email" autocomplete="off" required>
+                        <label>Mensagem</label>
+                        <textarea name="message" cols="30" rows="10" placeholder="Digite sua mensagem" required></textarea>
+                        <button type="submit">Enviar</button>
         
-        </div>
+                        <input type="hidden" name="accessKey" value="042be0d3-84fa-4ae8-aaed-2434cda72cac">
+                        <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/Projeto%201%20-%20HTML%20e%20CSS/contato.html">
+                    </form>
+            </section>
 
+            <div class="mapBox">
+                <h1>Mapa</h1>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7316.080216387734!2d-46.5666239!3d-23.5310598!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5ee40cd2d491%3A0xb08fddbb15528297!2sParque%20S%C3%A3o%20Jorge%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1665861588917!5m2!1spt-BR!2sbr" width="400" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+       </div>
+       
     </main>
     <footer>
         <p>Site Criado por <a href="#" target="_blank">David Kelven</a></p>

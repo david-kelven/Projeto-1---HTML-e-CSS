@@ -263,13 +263,13 @@ div.swiper-button-next, div.swiper-button-prev{
 .slider{
     margin: 0 auto;
     width: 800px;
-    height: 400px;
+    height: 300px;
     overflow: hidden;
 }
 
 .slides{
     width: 400%;
-    height: 400px;
+    height: 300px;
     display: flex;
 }
 
@@ -340,7 +340,7 @@ div.swiper-button-next, div.swiper-button-prev{
 .navigation-auto{
     position: absolute;
     width: 800px;
-    margin-top: 360px;
+    margin-top: 260px;
     display: flex;
     justify-content: center;
 }
@@ -443,70 +443,174 @@ form .input-group button{
 
 /* CONTATO */
 
-
-.elementor{
+.contato{
     width: 100%;
-    height: 150px;
-    display: inline-block;
+    padding: 0px 0px 30px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contato .cartao{
+    position: relative;
+    padding: 10px;
+    width: 300px;
+    background-color: var(--cor2);
+    border: 1px solid var(--cor1);
+    border-radius: 20px;
+    overflow: hidden;
+    transition: 0.5s;
+    text-align: center;
+}
+
+.contato .cartao{
+    margin-right: 10px;
+}
+
+.contato .cartao p{
+    color: var(--cor1);
+
+    padding-left: 15px;
+    position: relative;
+    display: flex;
+    text-align: center;
+}
+
+.contato .cartao img{
+    transition: 0.5s;
+    width: 100px;
+}
+
+.contato  .cartao h1{
+    font-size: 2rem;
+}
+
+.contato .cartao .content{
+    padding: 20px;
+    text-align: center;
 }
 
 
-
-#container-left{
-    width: 30%;
-    height: 120px;
+.contato .cartao .content a{
+    position: relative;
     display: inline-block;
-    float: left;
-    margin-right: 50px;
+    padding: 10px 20px;
     background-color: var(--cor1);
-}
-
-#container-center{
-    width: 30%;
-    height: 120px;
-    display: inline-block;
-    background-color: var(--cor1);
-}   
-
-#container-right{
-    width: 30%;
-    height: 120px;
-    float: right;
-    display: inline-block;
-    background-color: var(--cor1);
+    color: var(--cor2);
+    border-radius: 40px;
+    text-decoration: none;
+    transition: 0.5s;
+    outline: none;
+    margin-top: 20px;
 }
 
 
-#container-left > h1{
-    padding: 20px 0px 0px 20px;
-    font-size: 20px;
+.contato .cartao:hover{
+    color: var(--cor2);
+    background: var(--cor1);
+    margin-top: -30px;
+    box-shadow: 2px 5px 5px var(--cor3);
+}
+
+.contato .cartao:hover img{
+    filter: invert(1);
+}
+
+.contato .cartao:hover p{
     color: var(--cor2);
 }
 
-#container-center > h1{
-    padding: 20px 0px 0px 20px;
-    font-size: 20px;
+.contato .cartao:hover h1{
     color: var(--cor2);
 }
 
-#container-right > h1{
-    padding: 20px 20px;
-    font-size: 20px;
-    color: var(--cor2);
+.contato .cartao:hover a{
+    background-color: var(--cor2);
+    color: var(--cor1);
+}
+
+/* CONTATO EMAIL */ 
+
+#form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 10px;
+    padding: 15px 10px;
+    background: var(--cor1);
+    width: 350px;
+    box-shadow:var(--cor1) 0px 2px 4px, var(--cor1) 0px 7px 13px -3px, var(--cor1) 0px -3px 0px inset;
+}
+
+#form h1{
+    color:  var(--cor2);
+    font-size: 1.5rem;
 
 }
 
-#container-left > p{
+section form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+form label{
+    color: #f5f5f5;
+    font-size: 17px;
+    margin-bottom: 4px;
+}
+form input{
+    padding: 15px;
+    outline: none;
+    border: 0;
+    margin-bottom: 20px;
     font-size: 15px;
-    color: var(--cor2);
+    transition: all 0.5s;
 }
-
-#container-center > p{
+form input:focus{
+    border-radius: 16px;
+}
+form textarea{
+    padding: 10px;
+    outline: none;
+    border: 0;
     font-size: 15px;
-    color: var(--cor2);
+    margin-bottom: 30px;
+    transition: all 0.5s;
+}
+form textarea:focus{
+    border-radius: 16px;
+}
+form button{
+    padding: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    background: transparent;
+    border: 2px solid #f5f5f5;
+    color: #f5f5f5;
+    transition: all 1s;
+    margin-bottom: 20px;
+}
+form button:hover{
+    background: #f5f5f5;
+    color: #101026;
+    border-radius: 16px;
 }
 
+.inferior{
+    display: flex;
+    flex-wrap: wrap;
+}
 
+.mapBox{
+    position: relative;
+    margin-left: 50px;
+}
+
+.mapBox .h1{
+    padding: 0px 0px 10px;
+}
 
 
 
